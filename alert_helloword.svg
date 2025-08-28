@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="400" height="200" viewBox="0 0 400 200" onload="init(evt)">
+     width="400" height="200" viewBox="0 0 400 200" onload="alert('hello');">
   <title>SVG JS Alert</title>
   <rect width="100%" height="100%" fill="#f5f5f5"/>
   <text x="200" y="60" text-anchor="middle" font-size="22" fill="#222">SVG with JavaScript</text>
   <rect id="btn" x="150" y="90" width="100" height="36" rx="8" ry="8" fill="#e0e0e0" stroke="#999"/>
   <text x="200" y="114" text-anchor="middle" font-size="16" fill="#000" pointer-events="none">Click me</text>
-  <script type="application/ecmascript"><![CDATA[
-      function init(evt){
-          try {
-              alert('helloword');
-          } catch (e) {}
-          var svg = evt.target;
-          var btn = svg.getElementById('btn');
-          if (btn) {
-              btn.addEventListener('click', function(){ alert('helloword'); });
-          }
-      }
-  ]]></script>
 </svg>
